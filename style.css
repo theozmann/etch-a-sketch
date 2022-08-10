@@ -32,21 +32,23 @@ body {
 
 .main {
     background-color: #eee;
-    height: 600px;
+    height: 70vh;
+    padding: 16px;
 }
 
 .main .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
 }
 
 .main .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-content: center;
+    justify-content: flex-start;
     height: 100%;
+    gap: 26px;
 }
 
 .main .buttons button {
@@ -70,4 +72,10 @@ body {
 
 .buttons .clear-grid-btn {
     color: #80b0a4;
+}
+
+.grid {
+    height: 90%;
+    width: 80%;
+    border: 1px solid black;
 }
