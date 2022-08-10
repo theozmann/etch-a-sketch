@@ -31,5 +31,43 @@ body {
 }
 
 .main {
+    background-color: #eee;
     height: 600px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.main .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+}
+
+.main .buttons button {
+    height: 60px;
+    width: 160px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttons .black-btn {
+    color: #d6742b;
+}
+
+.buttons .gradual-btn {
+    color: #d9ac36;
+}
+
+.buttons .rainbow-btn {
+   color: #d04f2c;
+}
+
+.buttons .clear-grid-btn {
+    color: #80b0a4;
 }
