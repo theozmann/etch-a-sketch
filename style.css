@@ -1,0 +1,35 @@
+@font-face {
+    font-family: magicRetro;
+    src: url(./fonts/Magic\ Retro.ttf);
+}
+
+* {
+    font-family: magicRetro, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7e7ce;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.navbar {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #d04f2c;
+}
+
+.main {
+    height: 600px;
+}
