@@ -12,7 +12,6 @@
 body {
     background-color: #f7e7ce;
     font-size: 16px;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,7 +33,6 @@ body {
 }
 
 .main {
-    /* background-color: #eee; */
     height: 70vh;
     padding: 16px;
     flex: 1;
@@ -52,7 +50,6 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
-    height: 100%;
     gap: 26px;
 }
 
@@ -94,7 +91,6 @@ button:hover {
 
 .buttons .secret-btn {
     margin-top: auto;
-    margin-bottom: 32px;
     opacity: 0;
 }
 
@@ -137,6 +133,8 @@ button:hover {
     width: 700px;
     border: 1px solid #431e15;
     border-radius: 8px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px #431e15;
 }
 
 .footer {
