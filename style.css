@@ -57,6 +57,13 @@ body {
     width: 160px;
     font-size: 22px;
     cursor: pointer;
+    border-radius: 16px;
+    background-color: antiquewhite;
+}
+
+button:hover {
+    transform: translate( -3px, -3px);
+    box-shadow: 1px 1px 2px #431e15;
 }
 
 .buttons .black-btn {
@@ -78,6 +85,7 @@ body {
 .buttons p {
     font-size: 24px;
     text-align: center;
+    color: #431e15;
 }
 
 .buttons .secret-btn {
