@@ -13,6 +13,9 @@ const clearBtn = document.querySelector(".clear-grid-btn");
 const secretBtn = document.querySelector(".secret-btn");
 
 let secretFart = new Audio('./audio/2HourFartLong.mp3');
+let fart19 = new Audio('./audio/19.m4a');
+let fart14 = new Audio('./audio/14.m4a');
+
 
 let gridSizeDisplay = document.querySelector(".grid-size-display");
 let gridSize = document.getElementById("grid-slider");
@@ -32,10 +35,12 @@ blackBtn.onclick = () => {
     setCurrentColor('black');
 }
 gradualBtn.onclick = () => {
-    
+    fart14.play();
+    alert('This feature has not yet been implemented')
 }
 rainbowBtn.onclick = () => {
-    
+    fart19.play();
+    alert('This feature has not yet been implemented')
 }
 secretBtn.onclick = () => {
     secretFart.play();
