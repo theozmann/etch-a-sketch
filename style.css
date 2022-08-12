@@ -7,6 +7,7 @@
     font-family: magicRetro, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -128,13 +129,24 @@ button:hover {
     opacity: 1;
 }
 
-.grid {
+.grid-border {
     height: 700px;
     width: 700px;
     border: 1px solid #431e15;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: antiquewhite;
     box-shadow: 2px 2px 2px #431e15;
+}
+
+.grid-border .grid {
+    height: 700px;
+    width: 700px;
+    display: grid;
+}
+
+.grid-element {
+    border: 1px solid black;
+    border-radius: 6px;
 }
 
 .footer {
