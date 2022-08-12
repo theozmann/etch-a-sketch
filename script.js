@@ -1,4 +1,4 @@
-const DEFAULT_COLOR = '#333'
+const DEFAULT_COLOR = 'black'
 const DEFAULT_SIZE = 16;
 
 let currentColor = DEFAULT_COLOR;
@@ -9,7 +9,10 @@ const gridElement = document.querySelector(".grid-element");
 const blackBtn = document.querySelector(".black-btn");
 const gradualBtn = document.querySelector(".gradual-btn");
 const rainbowBtn = document.querySelector(".rainbow-btn");
+const clearBtn = document.querySelector(".clear-grid-btn");
 const secretBtn = document.querySelector(".secret-btn");
+
+let secretFart = new Audio('./audio/2HourFartLong.mp3');
 
 let gridSizeDisplay = document.querySelector(".grid-size-display");
 let gridSize = document.getElementById("grid-slider");
@@ -21,6 +24,23 @@ gridSize.oninput = function () {
     clearGrid();
     createGrid(currentSize);
 }
+clearBtn.onclick = () => {
+    clearGrid()
+    createGrid(currentSize);
+};
+blackBtn.onclick = () => {
+    setCurrentColor('black');
+}
+gradualBtn.onclick = () => {
+    
+}
+rainbowBtn.onclick = () => {
+    
+}
+secretBtn.onclick = () => {
+    secretFart.play();
+}
+
 
 
 function setCurrentColor(newColor) {
@@ -43,7 +63,7 @@ function createGrid(currentSize) {
     const gridElement = document.createElement("div");
     gridElement.classList.add("grid-element");
     gridElement.addEventListener ('mouseover', () => {
-        gridElement.style.backgroundColor = "black";
+        gridElement.style.backgroundColor = currentColor;
     })
     grid.appendChild(gridElement);
   }
